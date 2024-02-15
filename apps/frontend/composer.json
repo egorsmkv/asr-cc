@@ -10,6 +10,7 @@
     "php": "^8.3",
     "ext-zmq": "*",
     "guzzlehttp/guzzle": "^7.2",
+    "josegus/laravel-flash": "^1.4",
     "laravel-lang/locales": "^2.4",
     "laravel/framework": "^10",
     "laravel/horizon": "^5.21",

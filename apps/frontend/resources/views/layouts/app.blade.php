@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    @hasSection('title')
-        <title>@yield('title') &mdash; {{ config('app.name', 'Laravel') }}</title>
-    @else
-        <title>{{ config('app.name', 'Laravel') }}</title>
-    @endif
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -22,7 +18,7 @@
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ASR-CC</span>
             </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                <a href="{{ route('projects.new') }}">
+                <a href="{{ route('projects.create') }}">
                     <button type="button"
                             class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                         New Project
@@ -45,6 +41,8 @@
 
 <section class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-5">
     <div class="mx-auto max-w-screen-xl px-4">
+
+        @include('flash::message')
 
         @yield('content')
 
