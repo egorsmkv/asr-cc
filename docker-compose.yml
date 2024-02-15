@@ -5,7 +5,7 @@ version: '3'
 
 services:
   apps:
-    image: laravel_app_postgresdb_dev:1.0
+    image: asrcc_dev:1.0
     container_name: apps_dev
     env_file:
       - dev.env
@@ -65,7 +65,7 @@ services:
     env_file:
       - dev.env
     volumes:
-      - postgresdb_data:/var/lib/postgresql
+      - asrcc_data:/var/lib/postgresql
     networks:
       - app_dev
     logging:
@@ -190,8 +190,8 @@ volumes:
     name: redis_dev_data
   minio_data:
     name: minio_dev_data
-  postgresdb_data:
-    name: postgresdb_dev_data
+  asrcc_data:
+    name: asrcc_dev_data
 
 networks:
    app_dev:

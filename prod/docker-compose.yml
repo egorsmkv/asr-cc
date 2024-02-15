@@ -5,7 +5,7 @@ version: '3'
 
 services:
   apps:
-    image: laravel_app_postgresdb_prod:1.0
+    image: asrcc_prod:1.0
     container_name: apps_prod
     restart: always
     env_file:
@@ -36,7 +36,7 @@ services:
           memory: 512M
 
   queue:
-    image: laravel_app_postgresdb_prod:1.0
+    image: asrcc_prod:1.0
     container_name: queue_prod
     restart: always
     env_file:
@@ -65,7 +65,7 @@ services:
           memory: 512M
 
   schedule:
-    image: laravel_app_postgresdb_prod:1.0
+    image: asrcc_prod:1.0
     container_name: schedule_prod
     restart: always
     env_file:
@@ -94,7 +94,7 @@ services:
           memory: 128M
 
   caddy:
-    image: laravel_app_postgresdb_prod:1.0
+    image: asrcc_prod:1.0
     container_name: caddy_prod
     restart: always
     ports:

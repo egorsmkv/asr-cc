@@ -4,10 +4,10 @@
 
 @section('content')
 
-    <div class="mx-auto max-w-screen-sm text-center">
-        <p class="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">
-            This is the index page
-        </p>
+    <h1 class="text-4xl font-thin text-gray-900 dark:text-white">Projects</h1>
+
+    <div class="mt-2 p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
+       No projects yet.
     </div>
 
 @endsection

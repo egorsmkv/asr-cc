@@ -1,10 +1,6 @@
-# Laravel Boilerplate + PostgreSQL
+# ASR-CC
 
-> [!NOTE]
-> It must:
-> - be on the latest version of Laravel
-> - be lightweight to run with Docker
-> - use modern technologies such as PHP 8.3, Go 1.21, Python 3.12, etc.
+This app is intended to automatically create a corpus for ASR systems using [pseudo-labeling][1].
 
 ### Requirements
 
@@ -95,3 +91,5 @@ task check-security
 - Read [UPDATE.md](https://github.com/egorsmkv/laravel-boilerplate/blob/main/UPDATE.md) to keep the project up to date;
 - Use [dive](https://github.com/wagoodman/dive) to analyze Docker images;
 - Use [grype](https://github.com/anchore/grype) to check security vulnerabilities.
+
+[1]: https://ai.facebook.com/blog/pseudo-labeling-speech-recognition-using-multilingual-unlabeled-data/
